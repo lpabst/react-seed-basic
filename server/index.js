@@ -1,9 +1,8 @@
-import * as express from 'express';
-import * as bodyParser from 'body-parser';
-import * as massive from 'massive';
-
-const config = require('./config.js');
+const express = require('express');
+const bodyParser = require('body-parser');
+const massive = require('massive');
 const app = module.exports = express();
+const config = require('./config.js');
 
 app.use(bodyParser.json());
 
